@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="chipBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c1917"/>
+      <stop offset="100%" style="stop-color:#0c0a09"/>
+    </linearGradient>
+    <linearGradient id="enclaveBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b69"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="360" fill="#f1f5f9" rx="12"/>
+  <rect width="800" height="360" fill="none" stroke="#e2e8f0" stroke-width="2" rx="12"/>
+
+  <text x="400" y="36" text-anchor="middle" fill="#0f172a" font-size="19" font-weight="bold">The Secure Enclave — Your Phone's Secret Vault</text>
+  <text x="400" y="56" text-anchor="middle" fill="#64748b" font-size="13">A chip-within-a-chip that even the OS can't touch</text>
+
+  <!-- SoC outline (big chip) -->
+  <rect x="50" y="72" width="700" height="260" rx="14" fill="url(#chipBg)" stroke="#78716c" stroke-width="2.5"/>
+  <text x="110" y="100" fill="#78716c" font-size="12" font-weight="bold">SoC (System on Chip)</text>
+
+  <!-- Main CPU block -->
+  <rect x="80" y="115" width="180" height="100" rx="8" fill="#292524" stroke="#57534e" stroke-width="1.5"/>
+  <text x="170" y="155" text-anchor="middle" fill="#d6d3d1" font-size="14" font-weight="bold">⚙️ Main CPU</text>
+  <text x="170" y="175" text-anchor="middle" fill="#a8a29e" font-size="11">Runs iOS / Android</text>
+  <text x="170" y="192" text-anchor="middle" fill="#a8a29e" font-size="11">Has NO access to</text>
+  <text x="170" y="207" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="bold">fingerprint data ❌</text>
+
+  <!-- GPU block -->
+  <rect x="80" y="228" width="180" height="70" rx="8" fill="#292524" stroke="#57534e" stroke-width="1.5"/>
+  <text x="170" y="265" text-anchor="middle" fill="#d6d3d1" font-size="13" font-weight="bold">🖼️ GPU / Neural</text>
+  <text x="170" y="283" text-anchor="middle" fill="#a8a29e" font-size="11">Graphics &amp; ML tasks</text>
+
+  <!-- Secure Enclave (glowing) -->
+  <rect x="310" y="105" width="400" height="205" rx="12" fill="url(#enclaveBg)" stroke="#a855f7" stroke-width="3" filter="url(#glow)"/>
+  <text x="510" y="132" text-anchor="middle" fill="#d8b4fe" font-size="13" font-weight="bold">🔒 SECURE ENCLAVE</text>
+  <text x="510" y="150" text-anchor="middle" fill="#a78bfa" font-size="11">(Completely isolated hardware)</text>
+
+  <!-- Inside Secure Enclave -->
+  <!-- Encrypted storage -->
+  <rect x="330" y="162" width="160" height="55" rx="8" fill="#3b1f6e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="410" y="185" text-anchor="middle" fill="#e9d5ff" font-size="12" font-weight="bold">🗄️ Encrypted Store</text>
+  <text x="410" y="202" text-anchor="middle" fill="#c4b5fd" font-size="11">Minutiae template</text>
+  <text x="410" y="214" text-anchor="middle" fill="#c4b5fd" font-size="11">(NOT the image)</text>
+
+  <!-- Matcher processor -->
+  <rect x="510" y="162" width="175" height="55" rx="8" fill="#3b1f6e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="597" y="185" text-anchor="middle" fill="#e9d5ff" font-size="12" font-weight="bold">⚡ Matcher CPU</text>
+  <text x="597" y="202" text-anchor="middle" fill="#c4b5fd" font-size="11">Compares live scan</text>
+  <text x="597" y="214" text-anchor="middle" fill="#c4b5fd" font-size="11">to template</text>
+
+  <!-- Output: only yes/no -->
+  <rect x="380" y="240" width="260" height="52" rx="8" fill="#1a0533" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="510" y="261" text-anchor="middle" fill="#f0abfc" font-size="12" font-weight="bold">Output: Only a YES or NO signal</text>
+  <text x="510" y="278" text-anchor="middle" fill="#d8b4fe" font-size="11">No image, no template, no fingerprint data</text>
+  <text x="510" y="291" text-anchor="middle" fill="#d8b4fe" font-size="11">ever leaves this box ⬅️</text>
+
+  <!-- Blocked arrow from CPU to Enclave -->
+  <line x1="265" y1="165" x2="305" y2="165" stroke="#ef4444" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="285" y="155" text-anchor="middle" fill="#ef4444" font-size="20" font-weight="bold">🚫</text>
+
+  <!-- Yes/No arrow going down from enclave to system -->
+  <line x1="510" y1="296" x2="510" y2="328" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="505,325 510,335 515,325" fill="#22c55e"/>
+  <rect x="450" y="330" width="120" height="22" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="510" y="345" text-anchor="middle" fill="#4ade80" font-size="12" font-weight="bold">✅ Unlock Signal</text>
+
+  <!-- Arrow labels -->
+  <text x="272" y="185" text-anchor="middle" fill="#ef4444" font-size="10">BLOCKED</text>
+</svg>

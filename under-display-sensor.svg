@@ -1,0 +1,112 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="displayBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="oledGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#312e81"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="760" height="360" fill="#f8fafc" rx="12"/>
+  <rect width="760" height="360" fill="none" stroke="#e2e8f0" stroke-width="2" rx="12"/>
+
+  <text x="380" y="36" text-anchor="middle" fill="#0f172a" font-size="18" font-weight="bold">Under-Display Ultrasonic Fingerprint Scanner</text>
+  <text x="380" y="56" text-anchor="middle" fill="#64748b" font-size="13">How your S-series phone scans through the screen itself 🤯</text>
+
+  <!-- Phone cross-section view -->
+  <g transform="translate(100, 75)">
+    
+    <!-- FINGER -->
+    <ellipse cx="280" cy="15" rx="100" ry="22" fill="#fddcb5" stroke="#d4956a" stroke-width="2"/>
+    <text x="280" y="19" text-anchor="middle" fill="#92400e" font-size="12" font-weight="bold">YOUR FINGER</text>
+    
+    <!-- Label: Finger -->
+    <text x="510" y="19" fill="#0f172a" font-size="13" font-weight="bold">① Finger on screen</text>
+    <text x="510" y="37" fill="#64748b" font-size="11">Skin is conductive, has</text>
+    <text x="510" y="51" fill="#64748b" font-size="11">ridges &amp; valleys</text>
+    <line x1="382" y1="15" x2="505" y2="25" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
+
+    <!-- Glass layer -->
+    <rect x="120" y="40" width="320" height="18" rx="3" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1.5"/>
+    <text x="280" y="53" text-anchor="middle" fill="#0369a1" font-size="11" font-weight="bold">Gorilla Glass</text>
+
+    <!-- OLED display layers -->
+    <rect x="120" y="61" width="320" height="28" rx="2" fill="url(#oledGlow)" stroke="#6366f1" stroke-width="1.5"/>
+    <!-- OLED pixels glowing -->
+    <g opacity="0.8">
+      <circle cx="145" cy="75" r="4" fill="#f472b6"/>
+      <circle cx="162" cy="75" r="4" fill="#34d399"/>
+      <circle cx="179" cy="75" r="4" fill="#60a5fa"/>
+      <circle cx="196" cy="75" r="4" fill="#f472b6"/>
+      <circle cx="213" cy="75" r="4" fill="#34d399"/>
+      <circle cx="230" cy="75" r="4" fill="#60a5fa"/>
+      <circle cx="247" cy="75" r="4" fill="#f472b6"/>
+      <circle cx="264" cy="75" r="4" fill="#34d399"/>
+      <circle cx="281" cy="75" r="4" fill="#60a5fa"/>
+      <circle cx="298" cy="75" r="4" fill="#f472b6"/>
+      <circle cx="315" cy="75" r="4" fill="#34d399"/>
+      <circle cx="332" cy="75" r="4" fill="#60a5fa"/>
+      <circle cx="349" cy="75" r="4" fill="#f472b6"/>
+      <circle cx="366" cy="75" r="4" fill="#34d399"/>
+      <circle cx="383" cy="75" r="4" fill="#60a5fa"/>
+      <circle cx="400" cy="75" r="4" fill="#f472b6"/>
+      <circle cx="417" cy="75" r="4" fill="#34d399"/>
+    </g>
+    <text x="510" y="68" fill="#0f172a" font-size="13" font-weight="bold">② OLED Display</text>
+    <text x="510" y="84" fill="#64748b" font-size="11">Thin enough for sound</text>
+    <text x="510" y="98" fill="#64748b" font-size="11">waves to pass through</text>
+    <line x1="442" y1="75" x2="505" y2="75" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
+
+    <!-- Ultrasonic sensor layer (highlighted) -->
+    <rect x="120" y="92" width="320" height="40" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="2.5"/>
+    <!-- Sound wave dots inside sensor -->
+    <g opacity="0.7">
+      <circle cx="180" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="195" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="210" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="225" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="240" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="255" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="270" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="285" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="300" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="315" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="330" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="345" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="360" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="375" cy="112" r="3" fill="#7c3aed"/>
+      <circle cx="390" cy="112" r="3" fill="#7c3aed"/>
+    </g>
+    <text x="280" y="116" text-anchor="middle" fill="#6d28d9" font-size="12" font-weight="bold">ULTRASONIC SENSOR ARRAY</text>
+
+    <text x="510" y="108" fill="#0f172a" font-size="13" font-weight="bold">③ Piezo Sensor Array</text>
+    <text x="510" y="124" fill="#64748b" font-size="11">Emits &amp; receives</text>
+    <text x="510" y="138" fill="#64748b" font-size="11">ultrasonic pulses</text>
+    <line x1="442" y1="112" x2="505" y2="118" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
+
+    <!-- PCB/motherboard -->
+    <rect x="120" y="135" width="320" height="24" rx="3" fill="#166534" stroke="#4ade80" stroke-width="1.5"/>
+    <text x="280" y="151" text-anchor="middle" fill="#dcfce7" font-size="11" font-weight="bold">Motherboard / PCB</text>
+
+    <!-- Sound wave arrows going UP and bouncing back DOWN -->
+    <g stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.8">
+      <!-- Up arrows (emitted) -->
+      <line x1="210" y1="92" x2="210" y2="40" marker-end="url(#arrowUp)"/>
+      <line x1="240" y1="92" x2="240" y2="40"/>
+      <line x1="270" y1="92" x2="270" y2="40"/>
+      <line x1="300" y1="92" x2="300" y2="40"/>
+      <line x1="330" y1="92" x2="330" y2="40"/>
+      <line x1="360" y1="92" x2="360" y2="40"/>
+    </g>
+
+    <!-- Explanation bottom -->
+    <rect x="0" y="175" width="490" height="75" rx="8" fill="#fdf4ff" stroke="#d8b4fe" stroke-width="1.5"/>
+    <text x="245" y="198" text-anchor="middle" fill="#581c87" font-size="13" font-weight="bold">🔊 How Ultrasonic Works:</text>
+    <text x="245" y="217" text-anchor="middle" fill="#6b21a8" font-size="12">The piezo sensor fires ultra-high-frequency sound pulses upward through the OLED.</text>
+    <text x="245" y="234" text-anchor="middle" fill="#6b21a8" font-size="12">Ridges absorb sound differently than valleys → echo pattern = your fingerprint map in 3D.</text>
+    <text x="245" y="251" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">Works even with wet fingers or screen protectors! 🌧️</text>
+  </g>
+</svg>

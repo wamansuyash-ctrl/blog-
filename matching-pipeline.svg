@@ -1,0 +1,87 @@
+<svg viewBox="0 0 860 340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="pipelineBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="860" height="340" fill="url(#pipelineBg)" rx="12"/>
+  
+  <text x="430" y="35" text-anchor="middle" fill="#e2e8f0" font-size="19" font-weight="bold">The Matching Pipeline: From Scan to ✅ Unlock</text>
+  <text x="430" y="55" text-anchor="middle" fill="#94a3b8" font-size="13">What actually happens in ~0.3 seconds every time you unlock your phone</text>
+
+  <!-- Step boxes -->
+  <!-- Step 1 -->
+  <rect x="20" y="75" width="140" height="165" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="90" y="103" text-anchor="middle" fill="#38bdf8" font-size="22">📷</text>
+  <text x="90" y="127" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="bold">Step 1</text>
+  <text x="90" y="145" text-anchor="middle" fill="#7dd3fc" font-size="12">Raw Scan</text>
+  <line x1="40" y1="158" x2="140" y2="158" stroke="#1e40af" stroke-width="1"/>
+  <text x="90" y="176" text-anchor="middle" fill="#94a3b8" font-size="11">Sensor captures</text>
+  <text x="90" y="191" text-anchor="middle" fill="#94a3b8" font-size="11">a raw grayscale</text>
+  <text x="90" y="206" text-anchor="middle" fill="#94a3b8" font-size="11">capacitance grid</text>
+  <text x="90" y="221" text-anchor="middle" fill="#38bdf8" font-size="13" font-weight="bold">~500 DPI</text>
+
+  <!-- Arrow 1 -->
+  <line x1="165" y1="158" x2="200" y2="158" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="205" y="75" width="140" height="165" rx="10" fill="#1c1917" stroke="#fb923c" stroke-width="2"/>
+  <text x="275" y="103" text-anchor="middle" fill="#fb923c" font-size="22">🔧</text>
+  <text x="275" y="127" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="bold">Step 2</text>
+  <text x="275" y="145" text-anchor="middle" fill="#fdba74" font-size="12">Enhancement</text>
+  <line x1="225" y1="158" x2="325" y2="158" stroke="#431407" stroke-width="1"/>
+  <text x="275" y="176" text-anchor="middle" fill="#94a3b8" font-size="11">Filters clean up</text>
+  <text x="275" y="191" text-anchor="middle" fill="#94a3b8" font-size="11">noise &amp; sharpen</text>
+  <text x="275" y="206" text-anchor="middle" fill="#94a3b8" font-size="11">ridge contrast</text>
+  <text x="275" y="221" text-anchor="middle" fill="#fb923c" font-size="13" font-weight="bold">Gabor filters</text>
+
+  <!-- Arrow 2 -->
+  <line x1="350" y1="158" x2="385" y2="158" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="390" y="75" width="140" height="165" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="460" y="103" text-anchor="middle" fill="#4ade80" font-size="22">📍</text>
+  <text x="460" y="127" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="bold">Step 3</text>
+  <text x="460" y="145" text-anchor="middle" fill="#86efac" font-size="12">Minutiae Extract</text>
+  <line x1="410" y1="158" x2="510" y2="158" stroke="#166534" stroke-width="1"/>
+  <text x="460" y="176" text-anchor="middle" fill="#94a3b8" font-size="11">Algorithm finds</text>
+  <text x="460" y="191" text-anchor="middle" fill="#94a3b8" font-size="11">ridge endings &amp;</text>
+  <text x="460" y="206" text-anchor="middle" fill="#94a3b8" font-size="11">bifurcations</text>
+  <text x="460" y="221" text-anchor="middle" fill="#4ade80" font-size="13" font-weight="bold">~30–80 points</text>
+
+  <!-- Arrow 3 -->
+  <line x1="535" y1="158" x2="570" y2="158" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="575" y="75" width="140" height="165" rx="10" fill="#3b0764" stroke="#d946ef" stroke-width="2"/>
+  <text x="645" y="103" text-anchor="middle" fill="#d946ef" font-size="22">🔐</text>
+  <text x="645" y="127" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="bold">Step 4</text>
+  <text x="645" y="145" text-anchor="middle" fill="#f0abfc" font-size="12">Template Match</text>
+  <line x1="595" y1="158" x2="695" y2="158" stroke="#4a044e" stroke-width="1"/>
+  <text x="645" y="176" text-anchor="middle" fill="#94a3b8" font-size="11">Live points vs</text>
+  <text x="645" y="191" text-anchor="middle" fill="#94a3b8" font-size="11">stored template</text>
+  <text x="645" y="206" text-anchor="middle" fill="#94a3b8" font-size="11">in Secure Enclave</text>
+  <text x="645" y="221" text-anchor="middle" fill="#d946ef" font-size="13" font-weight="bold">Score &gt; threshold?</text>
+
+  <!-- Arrow 4 -->
+  <line x1="720" y1="158" x2="755" y2="158" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 5 - Result -->
+  <rect x="760" y="75" width="80" height="165" rx="10" fill="#052e16" stroke="#22c55e" stroke-width="2.5"/>
+  <text x="800" y="120" text-anchor="middle" fill="#22c55e" font-size="28">✅</text>
+  <text x="800" y="148" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="bold">YES!</text>
+  <text x="800" y="168" text-anchor="middle" fill="#86efac" font-size="11">Match</text>
+  <text x="800" y="185" text-anchor="middle" fill="#86efac" font-size="11">Found</text>
+  <text x="800" y="220" text-anchor="middle" fill="#4ade80" font-size="20">🔓</text>
+
+  <!-- Bottom note -->
+  <rect x="20" y="258" width="820" height="68" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="430" y="280" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="bold">🧠 The "wait, that's actually wild" moment:</text>
+  <text x="430" y="300" text-anchor="middle" fill="#94a3b8" font-size="12.5">Your phone NEVER stores your actual fingerprint image. It stores only a mathematical template of minutiae coordinates.</text>
+  <text x="430" y="318" text-anchor="middle" fill="#94a3b8" font-size="12.5">That template never leaves the Secure Enclave chip and cannot be reverse-engineered back to an image. 🤯</text>
+</svg>

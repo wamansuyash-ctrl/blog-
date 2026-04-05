@@ -1,0 +1,102 @@
+<svg viewBox="0 0 820 400" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fddcb5"/>
+      <stop offset="100%" style="stop-color:#f0b884"/>
+    </linearGradient>
+    <linearGradient id="sensorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff"/>
+      <stop offset="100%" style="stop-color:#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="820" height="400" fill="url(#bgGrad)" rx="12"/>
+  
+  <!-- Title -->
+  <text x="410" y="35" text-anchor="middle" fill="#e2e8f0" font-size="19" font-weight="bold">How a Capacitive Fingerprint Sensor Works</text>
+  <text x="410" y="55" text-anchor="middle" fill="#94a3b8" font-size="13">Tiny capacitors measure the distance between your skin and the sensor</text>
+
+  <!-- === LEFT: RIDGE over sensor === -->
+  <text x="195" y="88" text-anchor="middle" fill="#34d399" font-size="14" font-weight="bold">Ridge (touching)</text>
+
+  <!-- Finger skin ridge -->
+  <ellipse cx="195" cy="128" rx="50" ry="24" fill="url(#skinGrad)" stroke="#d4956a" stroke-width="1.5"/>
+  <text x="195" y="133" text-anchor="middle" fill="#92400e" font-size="11" font-weight="bold">RIDGE</text>
+
+  <!-- Air gap (none for ridge) -->
+
+  <!-- Sensor plate -->
+  <rect x="120" y="155" width="150" height="22" rx="4" fill="url(#sensorGrad)" stroke="#6366f1" stroke-width="2"/>
+  <text x="195" y="170" text-anchor="middle" fill="#3730a3" font-size="11" font-weight="bold">Sensor Plate</text>
+
+  <!-- Substrate -->
+  <rect x="115" y="178" width="160" height="18" rx="3" fill="#312e81" opacity="0.8"/>
+  <text x="195" y="191" text-anchor="middle" fill="#a5b4fc" font-size="10">Substrate Layer</text>
+
+  <!-- Charge lines (capacitance high) -->
+  <g stroke="#34d399" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.9">
+    <line x1="150" y1="153" x2="150" y2="132"/>
+    <line x1="165" y1="153" x2="163" y2="123"/>
+    <line x1="180" y1="153" x2="178" y2="118"/>
+    <line x1="195" y1="153" x2="195" y2="115"/>
+    <line x1="210" y1="153" x2="212" y2="118"/>
+    <line x1="225" y1="153" x2="228" y2="123"/>
+    <line x1="240" y1="153" x2="240" y2="132"/>
+  </g>
+
+  <!-- High capacitance label -->
+  <rect x="130" y="208" width="130" height="30" rx="6" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="195" y="221" text-anchor="middle" fill="#34d399" font-size="11" font-weight="bold">⚡ HIGH Capacitance</text>
+  <text x="195" y="233" text-anchor="middle" fill="#6ee7b7" font-size="10">Skin is close → more charge</text>
+
+  <!-- === RIGHT: VALLEY over sensor === -->
+  <text x="590" y="88" text-anchor="middle" fill="#f87171" font-size="14" font-weight="bold">Valley (not touching)</text>
+
+  <!-- Finger skin valley (flat bottom with air gap) -->
+  <path d="M 520 140 Q 560 115 590 115 Q 625 115 660 140" fill="url(#skinGrad)" stroke="#d4956a" stroke-width="1.5"/>
+  <line x1="520" y1="140" x2="660" y2="140" stroke="#d4956a" stroke-width="1.5"/>
+  <text x="590" y="133" text-anchor="middle" fill="#92400e" font-size="11" font-weight="bold">VALLEY</text>
+
+  <!-- Air gap visual -->
+  <rect x="520" y="140" width="140" height="16" rx="0" fill="#1e293b" opacity="0.6"/>
+  <text x="590" y="151" text-anchor="middle" fill="#94a3b8" font-size="10">← Air Gap →</text>
+
+  <!-- Sensor plate -->
+  <rect x="515" y="156" width="150" height="22" rx="4" fill="url(#sensorGrad)" stroke="#6366f1" stroke-width="2"/>
+  <text x="590" y="171" text-anchor="middle" fill="#3730a3" font-size="11" font-weight="bold">Sensor Plate</text>
+
+  <!-- Substrate -->
+  <rect x="510" y="179" width="160" height="18" rx="3" fill="#312e81" opacity="0.8"/>
+  <text x="590" y="192" text-anchor="middle" fill="#a5b4fc" font-size="10">Substrate Layer</text>
+
+  <!-- Weak charge lines (fewer, shorter) -->
+  <g stroke="#f87171" stroke-width="1" stroke-dasharray="2,4" opacity="0.6">
+    <line x1="545" y1="154" x2="545" y2="140"/>
+    <line x1="570" y1="154" x2="570" y2="140"/>
+    <line x1="590" y1="154" x2="590" y2="140"/>
+    <line x1="610" y1="154" x2="610" y2="140"/>
+    <line x1="635" y1="154" x2="635" y2="140"/>
+  </g>
+
+  <!-- Low capacitance label -->
+  <rect x="525" y="208" width="130" height="30" rx="6" fill="#4c0519" stroke="#f87171" stroke-width="1.5"/>
+  <text x="590" y="221" text-anchor="middle" fill="#f87171" font-size="11" font-weight="bold">💤 LOW Capacitance</text>
+  <text x="590" y="233" text-anchor="middle" fill="#fca5a5" font-size="10">Air gap → less charge</text>
+
+  <!-- Separator -->
+  <line x1="410" y1="75" x2="410" y2="260" stroke="#475569" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="410" y="70" text-anchor="middle" fill="#64748b" font-size="11">vs</text>
+
+  <!-- Bottom explanation -->
+  <rect x="50" y="272" width="720" height="110" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  
+  <text x="410" y="296" text-anchor="middle" fill="#e2e8f0" font-size="15" font-weight="bold">🧲 The Physics Bit (don't panic — it's actually cool)</text>
+  <text x="410" y="318" text-anchor="middle" fill="#94a3b8" font-size="13">A capacitor stores charge between two conductive surfaces. The closer they are, the MORE charge it can hold.</text>
+  <text x="410" y="337" text-anchor="middle" fill="#94a3b8" font-size="13">Your skin is conductive. Ridge = skin touches sensor = HIGH capacitance. Valley = air gap = LOW capacitance.</text>
+  <text x="410" y="360" text-anchor="middle" fill="#38bdf8" font-size="13" font-weight="bold">The sensor reads thousands of these values and maps out a 2D grid of ridges and valleys.</text>
+  <text x="410" y="377" text-anchor="middle" fill="#7dd3fc" font-size="12">That grid = your digital fingerprint image. 🗺️</text>
+</svg>

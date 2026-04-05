@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4ff"/>
+      <stop offset="100%" style="stop-color:#e8f0fe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="380" fill="url(#bg)" rx="12"/>
+  <rect width="800" height="380" fill="none" stroke="#c7d2fe" stroke-width="2" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#1e293b" font-size="20" font-weight="bold">Anatomy of a Fingerprint</text>
+  <text x="400" y="58" text-anchor="middle" fill="#64748b" font-size="13">Your skin has a story — written in loops and whorls</text>
+
+  <!-- Fingerprint center graphic -->
+  <g transform="translate(200, 210)">
+    <!-- Elliptical ridges to simulate a whorl fingerprint -->
+    <ellipse cx="0" cy="0" rx="100" ry="95" fill="none" stroke="#334155" stroke-width="5" opacity="0.85"/>
+    <ellipse cx="0" cy="0" rx="85" ry="80" fill="none" stroke="#334155" stroke-width="5" opacity="0.85"/>
+    <ellipse cx="0" cy="0" rx="70" ry="65" fill="none" stroke="#334155" stroke-width="5" opacity="0.85"/>
+    <ellipse cx="0" cy="0" rx="55" ry="50" fill="none" stroke="#334155" stroke-width="5" opacity="0.85"/>
+    <ellipse cx="0" cy="0" rx="40" ry="35" fill="none" stroke="#334155" stroke-width="4" opacity="0.85"/>
+    <ellipse cx="0" cy="0" rx="26" ry="22" fill="none" stroke="#334155" stroke-width="4" opacity="0.85"/>
+    <ellipse cx="0" cy="0" rx="13" ry="10" fill="#334155" opacity="0.7"/>
+    <!-- Ridge break (minutiae point) -->
+    <circle cx="48" cy="-38" r="6" fill="#ef4444" stroke="white" stroke-width="1.5"/>
+    <circle cx="-60" cy="42" r="6" fill="#3b82f6" stroke="white" stroke-width="1.5"/>
+    <circle cx="28" cy="68" r="6" fill="#10b981" stroke="white" stroke-width="1.5"/>
+    <!-- Ridge label arrows -->
+    <line x1="0" y1="-100" x2="0" y2="-115" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <line x1="0" y1="-82" x2="0" y2="-100" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,2"/>
+  </g>
+
+  <!-- Labels left side -->
+  <text x="55" y="130" fill="#334155" font-size="14" font-weight="bold">Ridge</text>
+  <text x="55" y="148" fill="#64748b" font-size="12">Raised skin line —</text>
+  <text x="55" y="163" fill="#64748b" font-size="12">the dark band</text>
+  <line x1="155" y1="145" x2="115" y2="152" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="115" y1="152" x2="107" y2="165" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <text x="30" y="230" fill="#334155" font-size="14" font-weight="bold">Valley</text>
+  <text x="30" y="248" fill="#64748b" font-size="12">Space between</text>
+  <text x="30" y="263" fill="#64748b" font-size="12">two ridges</text>
+  <line x1="130" y1="245" x2="100" y2="215" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <text x="30" y="318" fill="#334155" font-size="14" font-weight="bold">Core</text>
+  <text x="30" y="336" fill="#64748b" font-size="12">Centre of the</text>
+  <text x="30" y="351" fill="#64748b" font-size="12">whorl pattern</text>
+  <line x1="100" y1="330" x2="118" y2="310" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="118" y1="310" x2="190" y2="245" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <!-- Legend right side -->
+  <text x="440" y="110" fill="#1e293b" font-size="15" font-weight="bold">Minutiae Points</text>
+  <text x="440" y="128" fill="#64748b" font-size="12">(the features scanners actually look for)</text>
+
+  <circle cx="455" cy="160" r="9" fill="#ef4444" stroke="white" stroke-width="1.5"/>
+  <text x="475" y="165" fill="#334155" font-size="13" font-weight="bold">Ridge Ending</text>
+  <text x="475" y="181" fill="#64748b" font-size="12">Where a ridge abruptly stops</text>
+
+  <circle cx="455" cy="215" r="9" fill="#3b82f6" stroke="white" stroke-width="1.5"/>
+  <text x="475" y="220" fill="#334155" font-size="13" font-weight="bold">Bifurcation</text>
+  <text x="475" y="236" fill="#64748b" font-size="12">Where one ridge splits into two</text>
+
+  <circle cx="455" cy="270" r="9" fill="#10b981" stroke="white" stroke-width="1.5"/>
+  <text x="475" y="275" fill="#334155" font-size="13" font-weight="bold">Short Ridge</text>
+  <text x="475" y="291" fill="#64748b" font-size="12">A tiny ridge between two others</text>
+
+  <!-- Fun fact box -->
+  <rect x="435" y="315" width="330" height="48" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="600" y="336" text-anchor="middle" fill="#92400e" font-size="12" font-weight="bold">🤯 Wild fact:</text>
+  <text x="600" y="353" text-anchor="middle" fill="#78350f" font-size="11">No two humans share the same minutiae map.</text>
+  <text x="600" y="367" text-anchor="middle" fill="#78350f" font-size="11">Not even identical twins.</text>
+</svg>
