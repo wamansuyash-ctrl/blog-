@@ -1,4 +1,4 @@
-# blog-# ☝️ How Your Finger Unlocks Your Phone
+# blog-#  How Your Finger Unlocks Your Phone
 
 ![author badge](./images/author-badge.svg)
 
@@ -18,7 +18,7 @@ Let's break it down.
 
 ---
 
-## 1. 🔍 First — What Even Is a Fingerprint?
+## 1.  First — What Even Is a Fingerprint?
 
 Before we talk about scanners, let's zoom in on what they're actually scanning.
 
@@ -34,11 +34,11 @@ Now here's what sensors *actually* care about — not the overall pattern (loop,
 
 A fingerprint has anywhere from 40 to 100 of these minutiae. Matching algorithms typically need 12–30 of them to match positions and angles for a successful identification. Your phone maps a subset of these points, stores their coordinates and orientations, and uses that mathematical map as your digital identity — not the actual image of your fingerprint.
 
-> 🤯 **The wild moment:** Your phone doesn't "know" what your fingerprint looks like. It knows a list of numbers. Those numbers happen to uniquely describe you.
+> **The wild moment:** Your phone doesn't "know" what your fingerprint looks like. It knows a list of numbers. Those numbers happen to uniquely describe you.
 
 ---
 
-## 2. ⚡ The Capacitive Sensor — A Grid of Tiny Capacitors
+## 2.  The Capacitive Sensor — A Grid of Tiny Capacitors
 
 Most phones use **capacitive fingerprint sensors** — and the physics behind them is beautifully simple once you see it.
 
@@ -55,29 +55,29 @@ The sensor reads every capacitor in the grid and produces a 2D map of high and l
 
 **Why this is genius:** It doesn't need light, it doesn't photograph your skin, and it measures a *physical property* of your finger touching the chip. That makes it hard to fool with a printed image.
 
-> 🧠 *Think of it like pressing bubble wrap onto a table — each bubble that pops (capacitor that fires) tells you exactly where the ridge was.*
+>  *Think of it like pressing bubble wrap onto a table — each bubble that pops (capacitor that fires) tells you exactly where the ridge was.*
 
 ---
 
-## 3. 💡 But Wait — There Are Three Types of Scanners
+## 3.  But Wait — There Are Three Types of Scanners
 
 Capacitive isn't the only approach. Here's the full lineup of fingerprint sensor technologies used in modern phones:
 
 ![scanner types comparison](./images/scanner-types.svg)
 
-### ⚡ Capacitive (The Classic)
+###  Capacitive (The Classic)
 Used in 85%+ of fingerprint-secured phones. Fast, accurate, cheap. Side-mounted (like on Pixel phones), home button (old iPhones), or rear-mounted. The downside: doesn't work well if your finger is wet, because water changes the capacitance readings.
 
 **Where you'll find it:** Pixel 7/8, older Samsung A-series, most budget Android phones.
 
-### 💡 Optical (The Light Photographer)
+###  Optical (The Light Photographer)
 Uses an LED to illuminate your finger, and a CMOS image sensor to take a photo. Simple idea — basically a really good camera pointed at your fingertip. The software then analyzes the photo for minutiae. This can work under-display on OLED screens, where the screen pixels themselves act as the light source.
 
 **The catch:** High-quality 2D photos can sometimes fool optical sensors. Security is lower than capacitive or ultrasonic.
 
 **Where you'll find it:** Many mid-range phones with in-display sensors.
 
-### 🔊 Ultrasonic (The 3D Wizard)
+###  Ultrasonic (The 3D Wizard)
 This is the expensive, impressive one. A **piezoelectric sensor** emits ultrasonic sound pulses through the display. Ridges and valleys reflect sound differently — ridges absorb more, valleys bounce it back differently — so the returning echo pattern creates a **3D depth map** of your fingerprint.
 
 It works through glass, wet fingers, and even screen protectors. It also captures depth information, making it extremely hard to spoof.
@@ -86,7 +86,7 @@ It works through glass, wet fingers, and even screen protectors. It also capture
 
 ---
 
-## 4. 🧠 The Algorithm — From Scan to Match
+## 4.  The Algorithm — From Scan to Match
 
 Okay so the sensor has captured an image (or capacitance map, or echo map). Now what? Here's the pipeline that runs every single time you unlock your phone:
 
@@ -104,13 +104,13 @@ Now the algorithm finds the minutiae points. It traces the ridge skeleton of the
 ### Step 4 — Template Matching
 Here's where it gets clever. The live minutiae set is compared against the **stored template** from your enrollment (when you set up fingerprint unlock). But your finger never lands in exactly the same position, at the same rotation, at the same pressure — so the algorithm uses geometric alignment to find the best fit, then computes a similarity score.
 
-If that score exceeds a threshold → you're in. 🔓
+If that score exceeds a threshold → you're in. 
 
-> ⚙️ **For the curious:** Algorithms like NIST's Bozorth3 and modern AI-based matchers handle the actual comparison. Modern phones also train small neural networks on your finger to improve accuracy over time — that's why your phone gets better at recognizing you after a few weeks.
+>  **For the curious:** Algorithms like NIST's Bozorth3 and modern AI-based matchers handle the actual comparison. Modern phones also train small neural networks on your finger to improve accuracy over time — that's why your phone gets better at recognizing you after a few weeks.
 
 ---
 
-## 5. 🔒 The Secure Enclave — The Vault Inside the Chip
+## 5.  The Secure Enclave — The Vault Inside the Chip
 
 This is the part most people don't know about — and honestly, it's the most impressive.
 
@@ -127,11 +127,11 @@ Here's what makes it special:
 
 This is why you can't back up fingerprints to iCloud or Google Drive. The template is physically bound to the chip it was enrolled on.
 
-> 🔥 **The "wait, that's actually wild" moment:** Imagine a safe deposit box where you can tell the box "is this key valid?", and it says yes or no — but you can never see inside the box, take anything out, or even look at the key it's comparing against. That's your phone's Secure Enclave.
+>  **The "wait, that's actually wild" moment:** Imagine a safe deposit box where you can tell the box "is this key valid?", and it says yes or no — but you can never see inside the box, take anything out, or even look at the key it's comparing against. That's your phone's Secure Enclave.
 
 ---
 
-## 6. 🔊 Bonus: Under-Display Ultrasonic — How It Sees Through the Screen
+## 6.  Bonus: Under-Display Ultrasonic — How It Sees Through the Screen
 
 The coolest modern implementation is definitely the **under-display ultrasonic sensor** found in Samsung's Galaxy S series. There's no dedicated sensor button — the sensor hides *behind the OLED display itself*.
 
@@ -143,7 +143,7 @@ This is why it works even with wet fingers — water changes the echo pattern co
 
 ---
 
-## 7. 😅 Why Does It Sometimes Fail?
+## 7.  Why Does It Sometimes Fail?
 
 If the scanner is so precise, why does it occasionally tell you "Try Again"?
 
@@ -155,11 +155,11 @@ A few culprits:
 - **Pressure variation** — Too light and the ridges don't register; too hard and ridges spread and distort.
 - **Sensor position** — If you enrolled your thumb at an angle and now place it differently, the geometric alignment might not find enough overlap.
 
-> 💡 **Pro tip:** When setting up fingerprint unlock, move your finger to all edges and angles during the enrollment process. Your phone is collecting multiple samples from different positions to build a more robust template.
+>  **Pro tip:** When setting up fingerprint unlock, move your finger to all edges and angles during the enrollment process. Your phone is collecting multiple samples from different positions to build a more robust template.
 
 ---
 
-## 🎉 You Made It — And Now You'll Never Touch That Sensor the Same Way
+##  You Made It — And Now You'll Never Touch That Sensor the Same Way
 
 ![meme](./images/meme-password-vs-finger.svg)
 
@@ -177,7 +177,7 @@ That's what good engineering looks like.
 
 ---
 
-## 📚 Want to Go Deeper?
+##  Want to Go Deeper?
 
 - 📄 [How Fingerprint Sensors Work — HowStuffWorks](https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/fingerprint-scanner.htm)
 - 📄 [Apple Secure Enclave Overview](https://support.apple.com/guide/security/secure-enclave-sec59b0b31ff/web)
